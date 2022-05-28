@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>30 + projects</title>
+</head>
+<link rel="stylesheet" href="all.css">
+<body>
+<!-- <button id="google" onclick="fun();">google</button> -->
+<!-- <button id="fb" onclick="fb();" >facebook</button> -->
+<h1><span>t</span>emprature <span>c</span>onerter</h1>
+<div id="container">
+ <div class="input-div">
+ <label>celcius</label> 
+<input type="number" name="" id="cel" value="0">  
+ </div>
+ 
+<div class="input-div">
+ <label>fehernite</label>
+<input type="number" name="" id="feh" value="32">  
+</div>
+</div>
+
+
+
+<script>
+let cel=document.getElementById("cel");
+let feh=document.getElementById("feh");
+
+
+
+cel.addEventListener('input',function(){
+let c=this.value;
+let f=(c*9/5)+32;
+feh.value=f;
+  })
+
+feh.addEventListener('input',function(){
+ let f=this.value;
+ let c=(f-32)*5/9;
+ cel.value=c;
+  
+})
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
